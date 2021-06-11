@@ -1,10 +1,8 @@
 package com.bootcamp.Desafio.quality.service.impl;
 
-import com.bootcamp.Desafio.quality.dto.*;
+import com.bootcamp.Desafio.quality.dtos.*;
 import com.bootcamp.Desafio.quality.service.PropertyService;
 import org.springframework.stereotype.Service;
-
-import java.util.HashMap;
 
 @Service
 public class PropertyServiceImpl implements PropertyService {

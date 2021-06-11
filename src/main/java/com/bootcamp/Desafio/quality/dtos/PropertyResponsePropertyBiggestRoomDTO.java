@@ -1,5 +1,6 @@
-package com.bootcamp.Desafio.quality.dto;
+package com.bootcamp.Desafio.quality.dtos;
 
+import com.bootcamp.Desafio.quality.utils.CalculateBiggestRoom;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,6 +15,6 @@ public class PropertyResponsePropertyBiggestRoomDTO {
     public PropertyResponsePropertyBiggestRoomDTO(PropertyDTO propertyDTO) {
         this.setProp_name(propertyDTO.getProp_name());
         this.setProp_district(propertyDTO.getProp_district());
-        this.setBiggestRoom(propertyDTO.getBiggestRoom());
+        this.setBiggestRoom(CalculateBiggestRoom.calculateBiggestRoom(propertyDTO));
     }
 }

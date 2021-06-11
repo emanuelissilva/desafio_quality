@@ -1,11 +1,9 @@
 package com.bootcamp.Desafio.quality.service;
 
-import com.bootcamp.Desafio.quality.dto.PropertyDTO;
-import com.bootcamp.Desafio.quality.dto.PropertyResponsePropertyBiggestRoomDTO;
-import com.bootcamp.Desafio.quality.dto.PropertyResponsePropertyRoomsSizeDTO;
-import com.bootcamp.Desafio.quality.dto.PropertyResponsePropertySizeDTO;
-
-import java.util.HashMap;
+import com.bootcamp.Desafio.quality.dtos.PropertyDTO;
+import com.bootcamp.Desafio.quality.dtos.PropertyResponsePropertyBiggestRoomDTO;
+import com.bootcamp.Desafio.quality.dtos.PropertyResponsePropertyRoomsSizeDTO;
+import com.bootcamp.Desafio.quality.dtos.PropertyResponsePropertySizeDTO;
 
 public interface PropertyService {
     PropertyResponsePropertySizeDTO getPropertySize(PropertyDTO property);

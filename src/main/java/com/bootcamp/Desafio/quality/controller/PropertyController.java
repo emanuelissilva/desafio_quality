@@ -1,9 +1,9 @@
 package com.bootcamp.Desafio.quality.controller;
 
-import com.bootcamp.Desafio.quality.dto.PropertyDTO;
-import com.bootcamp.Desafio.quality.dto.PropertyResponsePropertyBiggestRoomDTO;
-import com.bootcamp.Desafio.quality.dto.PropertyResponsePropertyRoomsSizeDTO;
-import com.bootcamp.Desafio.quality.dto.PropertyResponsePropertySizeDTO;
+import com.bootcamp.Desafio.quality.dtos.PropertyDTO;
+import com.bootcamp.Desafio.quality.dtos.PropertyResponsePropertyBiggestRoomDTO;
+import com.bootcamp.Desafio.quality.dtos.PropertyResponsePropertyRoomsSizeDTO;
+import com.bootcamp.Desafio.quality.dtos.PropertyResponsePropertySizeDTO;
 import com.bootcamp.Desafio.quality.service.PropertyService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -29,7 +29,7 @@ public class PropertyController {
        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
-    @PostMapping("/biggestRoom")
+    @PostMapping("/biggest/room")
     public ResponseEntity<PropertyResponsePropertyBiggestRoomDTO> getPropertyBiggestRoom(@RequestBody @Valid PropertyDTO property){
         PropertyResponsePropertyBiggestRoomDTO response = propertyService.getPropertyBiggestRoom(property);
         return new ResponseEntity<>(response, HttpStatus.OK);
@@ -40,7 +40,7 @@ public class PropertyController {
         return new ResponseEntity<>(propertyService.getPropertyPrice(property), HttpStatus.OK);
     }
 
-    @PostMapping("/roomSize")
+    @PostMapping("/size/room")
     public ResponseEntity<PropertyResponsePropertyRoomsSizeDTO> getPropertyEachRoomSize(@RequestBody @Valid PropertyDTO property){
         return new ResponseEntity<>(propertyService.getEachRoomSize(property), HttpStatus.OK);
     }
