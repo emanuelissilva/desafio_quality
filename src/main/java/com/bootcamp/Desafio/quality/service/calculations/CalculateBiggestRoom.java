@@ -1,4 +1,4 @@
-package com.bootcamp.Desafio.quality.utils;
+package com.bootcamp.Desafio.quality.service.calculations;
 
 import com.bootcamp.Desafio.quality.dtos.PropertyDTO;
 import com.bootcamp.Desafio.quality.dtos.RoomDTO;

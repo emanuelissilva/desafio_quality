@@ -1,6 +1,6 @@
 package com.bootcamp.Desafio.quality.dtos;
 
-import com.bootcamp.Desafio.quality.utils.CalculateRoomSize;
+import com.bootcamp.Desafio.quality.service.calculations.CalculateRoomSize;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -30,4 +30,12 @@ public class RoomDTO {
     public Double getSize_room() {
         return CalculateRoomSize.calculateRoomSize(this.getRoom_width(), this.getRoom_length());
     }
+
+    public RoomDTO(String room_name, Double room_width, Double room_length) {
+        this.room_name=room_name;
+        this.room_width=room_width;
+        this.room_length=room_length;
+    }
+
+
 }

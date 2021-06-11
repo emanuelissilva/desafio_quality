@@ -1,6 +1,6 @@
 package com.bootcamp.Desafio.quality.dtos;
 
-import com.bootcamp.Desafio.quality.utils.CalculateBiggestRoom;
+import com.bootcamp.Desafio.quality.service.calculations.CalculateBiggestRoom;
 import lombok.Getter;
 import lombok.Setter;
 

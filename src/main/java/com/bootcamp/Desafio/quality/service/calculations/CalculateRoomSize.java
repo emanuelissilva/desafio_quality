@@ -1,4 +1,4 @@
-package com.bootcamp.Desafio.quality.utils;
+package com.bootcamp.Desafio.quality.service.calculations;
 
 
 public class CalculateRoomSize {

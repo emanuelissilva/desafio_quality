@@ -1,6 +1,6 @@
 package com.bootcamp.Desafio.quality.dtos;
 
-import com.bootcamp.Desafio.quality.utils.CalculatePropertyPrice;
+import com.bootcamp.Desafio.quality.service.calculations.CalculatePropertyPrice;
 import lombok.Getter;
 import lombok.Setter;
 

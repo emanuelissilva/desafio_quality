@@ -1,6 +1,6 @@
 package com.bootcamp.Desafio.quality.dtos;
 
-import com.bootcamp.Desafio.quality.utils.CalculatePropertySize;
+import com.bootcamp.Desafio.quality.service.calculations.CalculatePropertySize;
 import lombok.Getter;
 import lombok.Setter;
 
