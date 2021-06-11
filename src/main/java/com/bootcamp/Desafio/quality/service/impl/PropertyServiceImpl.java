@@ -12,8 +12,8 @@ public class PropertyServiceImpl implements PropertyService {
     }
 
     @Override
-    public PropertyDTO getPropertyPrice(PropertyDTO property) {
-        return property;
+    public PropertyResponsePropertyPriceDTO getPropertyPrice(PropertyDTO property) {
+        return new PropertyResponsePropertyPriceDTO(property);
     }
 
     @Override

@@ -14,7 +14,7 @@ import java.util.List;
 @Setter
 public class PropertyDTO {
     @NotNull(message="The name can't be null")
-    @Pattern(regexp = "^[A-ZÀ-Ÿ][A-zÀ-ÿ']+\\s([A-zÀ-ÿ']\\s?)*$",message = "The first property name letter must be in capital case")
+    @Pattern(regexp = "[A-ZÀ-Ÿ][A-zÀ-ÿ']*\\s*([A-zÀ-ÿ']\\s?)*$",message = "The first property name letter must be in capital case")
     @Size(max=30, message = "The property name range is 30 characteres")
     private String prop_name;
 

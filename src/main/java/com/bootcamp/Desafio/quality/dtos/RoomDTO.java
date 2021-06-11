@@ -13,7 +13,7 @@ import javax.validation.constraints.Size;
 @Setter
 public class RoomDTO {
     @NotNull(message = "The room name can't be null")
-    @Pattern(regexp = "^[A-ZÀ-Ÿ][A-zÀ-ÿ']+\\s([A-zÀ-ÿ']\\s?)*$",message = "The first room name letter must be in capital case")
+    @Pattern(regexp = "[A-ZÀ-Ÿ][A-zÀ-ÿ']*\\s*([A-zÀ-ÿ']\\s?)*$",message = "The first room name letter must be in capital case")
     @Size(max=30, message = "The room name range is 30 characteres")
     private String room_name;
 

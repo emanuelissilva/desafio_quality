@@ -17,4 +17,12 @@ public class ApiExceptionControllerAdvice {
         responseBody.setMessage(ex.getFieldError().getDefaultMessage());
         return new ResponseEntity<>(responseBody, HttpStatus.BAD_REQUEST);
     }
+
+    @ExceptionHandler(DistrictNotFound.class)
+    public ResponseEntity<Object> handleException(DistrictNotFound e) {
+        var responseBody = new ErrorResponseDTO();
+        responseBody.setCause("This district could not be found");
+        responseBody.setMessage(e.getMessage());
+        return new ResponseEntity<>(responseBody, HttpStatus.NOT_FOUND);
+    }
 }

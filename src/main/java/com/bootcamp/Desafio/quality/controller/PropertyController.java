@@ -1,9 +1,6 @@
 package com.bootcamp.Desafio.quality.controller;
 
-import com.bootcamp.Desafio.quality.dtos.PropertyDTO;
-import com.bootcamp.Desafio.quality.dtos.PropertyResponsePropertyBiggestRoomDTO;
-import com.bootcamp.Desafio.quality.dtos.PropertyResponsePropertyRoomsSizeDTO;
-import com.bootcamp.Desafio.quality.dtos.PropertyResponsePropertySizeDTO;
+import com.bootcamp.Desafio.quality.dtos.*;
 import com.bootcamp.Desafio.quality.service.PropertyService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -36,7 +33,7 @@ public class PropertyController {
     }
 
     @PostMapping("/price")
-    public ResponseEntity<PropertyDTO> getPropertyPrice(@RequestBody @Valid PropertyDTO property){
+    public ResponseEntity<PropertyResponsePropertyPriceDTO> getPropertyPrice(@RequestBody @Valid PropertyDTO property){
         return new ResponseEntity<>(propertyService.getPropertyPrice(property), HttpStatus.OK);
     }
 
