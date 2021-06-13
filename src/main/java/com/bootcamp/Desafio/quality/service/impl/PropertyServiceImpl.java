@@ -1,14 +1,14 @@
 package com.bootcamp.Desafio.quality.service.impl;
 
-import com.bootcamp.Desafio.quality.dtos.*;
+import com.bootcamp.Desafio.quality.dto.*;
 import com.bootcamp.Desafio.quality.service.PropertyService;
 import org.springframework.stereotype.Service;
 
 @Service
 public class PropertyServiceImpl implements PropertyService {
     @Override
-    public PropertyResponsePropertySizeDTO getPropertySize(PropertyDTO property) {
-        return new PropertyResponsePropertySizeDTO(property);
+    public PropertyResponsePropertyAreaDTO getPropertyArea(PropertyDTO property) {
+        return new PropertyResponsePropertyAreaDTO(property);
     }
 
     @Override
@@ -17,12 +17,12 @@ public class PropertyServiceImpl implements PropertyService {
     }
 
     @Override
-    public PropertyResponsePropertyBiggestRoomDTO getPropertyBiggestRoom(PropertyDTO propertyDTO) {
-        return new PropertyResponsePropertyBiggestRoomDTO(propertyDTO);
+    public PropertyResponsePropertyBiggestRoomDTO getPropertyBiggestRoom(PropertyDTO property) {
+        return new PropertyResponsePropertyBiggestRoomDTO(property);
     }
 
     @Override
-    public PropertyResponsePropertyRoomsSizeDTO getEachRoomSize(PropertyDTO property) {
-        return new PropertyResponsePropertyRoomsSizeDTO(property);
+    public PropertyResponsePropertyEachRoomAreaDTO getEachRoomArea(PropertyDTO property) {
+        return new PropertyResponsePropertyEachRoomAreaDTO(property);
     }
 }

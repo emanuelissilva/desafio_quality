@@ -1,8 +1,8 @@
-package com.bootcamp.Desafio.quality.unit.service.calculations;
+package com.bootcamp.Desafio.quality.unit.service.calculation;
 
-import com.bootcamp.Desafio.quality.dtos.PropertyDTO;
-import com.bootcamp.Desafio.quality.dtos.RoomDTO;
-import com.bootcamp.Desafio.quality.service.calculations.CalculateBiggestRoom;
+import com.bootcamp.Desafio.quality.dto.PropertyDTO;
+import com.bootcamp.Desafio.quality.dto.RoomDTO;
+import com.bootcamp.Desafio.quality.service.calculation.CalculateBiggestRoom;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

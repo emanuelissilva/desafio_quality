@@ -1,4 +1,4 @@
-package com.bootcamp.Desafio.quality.dtos;
+package com.bootcamp.Desafio.quality.dto;
 
 import lombok.Getter;
 import lombok.Setter;

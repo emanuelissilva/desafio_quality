@@ -1,6 +1,6 @@
-package com.bootcamp.Desafio.quality.exceptions;
+package com.bootcamp.Desafio.quality.exception;
 
-import com.bootcamp.Desafio.quality.dtos.ErrorResponseDTO;
+import com.bootcamp.Desafio.quality.dto.ErrorResponseDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;

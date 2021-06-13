@@ -1,10 +1,10 @@
 package com.bootcamp.Desafio.quality.service;
 
-import com.bootcamp.Desafio.quality.dtos.*;
+import com.bootcamp.Desafio.quality.dto.*;
 
 public interface PropertyService {
-    PropertyResponsePropertySizeDTO getPropertySize(PropertyDTO property);
+    PropertyResponsePropertyAreaDTO getPropertyArea(PropertyDTO property);
     PropertyResponsePropertyPriceDTO getPropertyPrice(PropertyDTO property);
     PropertyResponsePropertyBiggestRoomDTO getPropertyBiggestRoom(PropertyDTO propertyDTO);
-    PropertyResponsePropertyRoomsSizeDTO getEachRoomSize(PropertyDTO property);
+    PropertyResponsePropertyEachRoomAreaDTO getEachRoomArea(PropertyDTO property);
 }

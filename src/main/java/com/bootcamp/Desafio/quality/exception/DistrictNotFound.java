@@ -1,4 +1,4 @@
-package com.bootcamp.Desafio.quality.exceptions;
+package com.bootcamp.Desafio.quality.exception;
 
 public class DistrictNotFound extends RuntimeException{
     public DistrictNotFound(String message) {

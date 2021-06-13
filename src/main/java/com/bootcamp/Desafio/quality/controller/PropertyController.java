@@ -1,7 +1,9 @@
 package com.bootcamp.Desafio.quality.controller;
 
-import com.bootcamp.Desafio.quality.dtos.*;
+import com.bootcamp.Desafio.quality.dto.*;
 import com.bootcamp.Desafio.quality.service.PropertyService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,6 +15,7 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/property")
+@Api(value="Property")
 public class PropertyController {
     private PropertyService propertyService;
 
@@ -20,26 +23,30 @@ public class PropertyController {
         this.propertyService = propertyService;
     }
 
-    @PostMapping("/size")
-    public ResponseEntity<PropertyResponsePropertySizeDTO> getPropertySize(@RequestBody @Valid PropertyDTO property){
-       PropertyResponsePropertySizeDTO response = propertyService.getPropertySize(property);
+    @ApiOperation("Calculates the property area")
+    @PostMapping("/area")
+    public ResponseEntity<PropertyResponsePropertyAreaDTO> getPropertyArea(@RequestBody @Valid PropertyDTO property){
+       PropertyResponsePropertyAreaDTO response = propertyService.getPropertyArea(property);
        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
+    @ApiOperation("Returns the property biggest room")
     @PostMapping("/biggest/room")
     public ResponseEntity<PropertyResponsePropertyBiggestRoomDTO> getPropertyBiggestRoom(@RequestBody @Valid PropertyDTO property){
         PropertyResponsePropertyBiggestRoomDTO response = propertyService.getPropertyBiggestRoom(property);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
+    @ApiOperation("Calculates the property price")
     @PostMapping("/price")
     public ResponseEntity<PropertyResponsePropertyPriceDTO> getPropertyPrice(@RequestBody @Valid PropertyDTO property){
         return new ResponseEntity<>(propertyService.getPropertyPrice(property), HttpStatus.OK);
     }
 
-    @PostMapping("/size/room")
-    public ResponseEntity<PropertyResponsePropertyRoomsSizeDTO> getPropertyEachRoomSize(@RequestBody @Valid PropertyDTO property){
-        return new ResponseEntity<>(propertyService.getEachRoomSize(property), HttpStatus.OK);
+    @ApiOperation("Returns each room area")
+    @PostMapping("/area/room")
+    public ResponseEntity<PropertyResponsePropertyEachRoomAreaDTO> getPropertyEachRoomArea(@RequestBody @Valid PropertyDTO property){
+        return new ResponseEntity<>(propertyService.getEachRoomArea(property), HttpStatus.OK);
     }
 
 }

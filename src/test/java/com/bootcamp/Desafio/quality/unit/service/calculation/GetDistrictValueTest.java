@@ -1,8 +1,8 @@
-package com.bootcamp.Desafio.quality.unit.service.calculations;
+package com.bootcamp.Desafio.quality.unit.service.calculation;
 
-import com.bootcamp.Desafio.quality.dtos.PropertyDTO;
-import com.bootcamp.Desafio.quality.dtos.RoomDTO;
-import com.bootcamp.Desafio.quality.service.calculations.GetDistrictValue;
+import com.bootcamp.Desafio.quality.dto.PropertyDTO;
+import com.bootcamp.Desafio.quality.dto.RoomDTO;
+import com.bootcamp.Desafio.quality.service.calculation.GetDistrictValue;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -16,10 +16,10 @@ public class GetDistrictValueTest {
         List<RoomDTO> roomDTOList = new ArrayList<>();
         roomDTOList.add(new RoomDTO("Cozinha", 3.0, 5.0));
         roomDTOList.add(new RoomDTO("Sala de star", 5.0, 3.0));
-        PropertyDTO propertyDTO = new PropertyDTO("Propriedade 1", "Vila peri", roomDTOList);
+        PropertyDTO propertyDTO = new PropertyDTO("Propriedade 1", "PROMORAR", roomDTOList);
 
         Double test = GetDistrictValue.getDistrictValue(propertyDTO.getProp_district());
 
-        assertEquals(test, 1.67);
+        assertEquals(test, 1.4);
     }
 }
