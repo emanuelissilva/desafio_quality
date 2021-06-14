@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Room size",
+			"name": "Room area",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -36,7 +36,7 @@
 			"response": []
 		},
 		{
-			"name": "Property Size",
+			"name": "Property area",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -71,7 +71,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"prop_name\": \"Propriedade esquina\", \n    \"prop_district\":\"José O. Barros\",\n    \"rooms\": [\n            {\n                \"room_name\":\"Cozinha a\", \"room_width\": 16.00, \"room_length\":22.00\n            },\n            {\n                \"room_name\":\"Sala de Jantar\",\"room_width\": 11.00, \"room_length\":22.00\n            }\n                \n]\n}",
+					"raw": "{\n    \"prop_name\": \"Propriedade esquina\", \n    \"prop_district\":\"Castelo Branco\",\n    \"rooms\": [\n            {\n                \"room_name\":\"Cozinha a\", \"room_width\": 16.00, \"room_length\":22.00\n            },\n            {\n                \"room_name\":\"Sala de Jantar\",\"room_width\": 11.00, \"room_length\":22.00\n            }\n                \n]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
