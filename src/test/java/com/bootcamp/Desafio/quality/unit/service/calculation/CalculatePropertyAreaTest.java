@@ -12,11 +12,11 @@ import java.util.List;
 
 public class CalculatePropertyAreaTest {
     @Test
-    public void shouldCalculaltePropertySize(){
+    public void shouldCalculatePropertyArea(){
         List<RoomDTO> roomDTOList = new ArrayList<>();
         roomDTOList.add(new RoomDTO("Cozinha", 4.0, 6.0));
-        roomDTOList.add(new RoomDTO("Sala de star", 3.0, 8.0));
-        PropertyDTO propertyDTO = new PropertyDTO("Propriedade 1", "Vila Peri", roomDTOList);
+        roomDTOList.add(new RoomDTO("Sala de estar", 3.0, 8.0));
+        PropertyDTO propertyDTO = new PropertyDTO("Propriedade da esquina", "Vila Peri", roomDTOList);
 
         Double test = CalculatePropertyArea.calculatePropertyArea(propertyDTO);
 

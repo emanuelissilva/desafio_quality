@@ -12,11 +12,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class GetDistrictValueTest {
     @Test
-    public void shouldVerifyifContainsDistrictName(){
+    public void shouldVerifyIfContainsDistrictName(){
         List<RoomDTO> roomDTOList = new ArrayList<>();
         roomDTOList.add(new RoomDTO("Cozinha", 3.0, 5.0));
-        roomDTOList.add(new RoomDTO("Sala de star", 5.0, 3.0));
-        PropertyDTO propertyDTO = new PropertyDTO("Propriedade 1", "PROMORAR", roomDTOList);
+        roomDTOList.add(new RoomDTO("Sala de estar", 5.0, 3.0));
+        PropertyDTO propertyDTO = new PropertyDTO("Propriedade da esquina", "PROMORAR", roomDTOList);
 
         Double test = GetDistrictValue.getDistrictValue(propertyDTO.getProp_district());
 

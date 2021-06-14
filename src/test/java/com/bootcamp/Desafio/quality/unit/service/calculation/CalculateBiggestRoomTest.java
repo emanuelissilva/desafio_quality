@@ -15,8 +15,8 @@ public class CalculateBiggestRoomTest {
     public void shouldCalculateBiggestRoom(){
         List<RoomDTO> roomDTOList = new ArrayList<>();
         roomDTOList.add(new RoomDTO("Cozinha", 4.0, 6.0));
-        roomDTOList.add(new RoomDTO("Sala de star", 5.0, 8.0));
-        PropertyDTO propertyDTO = new PropertyDTO("Propriedade 1", "Vila Peri", roomDTOList);
+        roomDTOList.add(new RoomDTO("Sala de estar", 5.0, 8.0));
+        PropertyDTO propertyDTO = new PropertyDTO("Propriedade da esquina", "Vila Peri", roomDTOList);
 
         RoomDTO test = CalculateBiggestRoom.calculateBiggestRoom(propertyDTO);
 

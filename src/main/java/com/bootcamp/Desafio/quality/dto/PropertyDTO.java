@@ -2,7 +2,6 @@
 package com.bootcamp.Desafio.quality.dto;
 
 import io.swagger.annotations.ApiModelProperty;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 

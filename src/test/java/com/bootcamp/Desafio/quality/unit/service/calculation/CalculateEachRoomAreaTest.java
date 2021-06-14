@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CalculateEachRoomAreaTest {
     @Test
-    public void shouldCalculaltePropertySize(){
+    public void shouldCalculateEachRoomArea(){
         RoomDTO roomDTO = new RoomDTO("Cozinha", 4.0, 6.0);
 
         Double test = CalculateEachRoomArea.calculateRoomAreea(roomDTO.getRoom_width(), roomDTO.getRoom_length());
