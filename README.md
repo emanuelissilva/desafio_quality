@@ -1,9 +1,9 @@
-#Quality challenge - bootcamp
-###"Sua avaliação de casas"
+# Quality challenge - bootcamp
+### "Sua avaliação de casas"
 
 This API calcutes the area and price of properties from a given district neighborhood.
 
-###Description
+### Description
 This project was developed in Java with Spring Framework. Unit and integration tests was implemented using Junit and MockMVC.
 
 To use this API you must clone this repository. When started, you can access the documentation on
