@@ -13,7 +13,7 @@ public class PropertyResponsePropertyBiggestRoomDTO {
     private String prop_name;
     @ApiModelProperty(example = "Vila Peri")
     private String prop_district;
-    @ApiModelProperty(example = "[{ 'room_name':'Cozinha', 'room_width':5.00, 'room_length':4.00}, {'room_name':'Sala', 'room_width':3.00, 'room_length':6.00}]")
+    @ApiModelProperty(example = "[{ 'room_name':'Cozinha', 'room_width':5.00, 'room_length':4.00, 'room_area':20.0}]")
     private RoomDTO biggest_room;
 
     public PropertyResponsePropertyBiggestRoomDTO(PropertyDTO propertyDTO) {
