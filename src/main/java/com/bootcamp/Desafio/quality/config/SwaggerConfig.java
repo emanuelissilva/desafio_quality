@@ -21,14 +21,14 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.bootcamp.Desafio.quality"))
                 .build()
+                .useDefaultResponseMessages(false)
                 .apiInfo(metaData());
-
     }
 
     private ApiInfo metaData() {
         return new ApiInfoBuilder()
                 .title("Spring Boot REST API")
-                .description("\"Desafio testing Meli bootcamp - 'Sua avaliação de casas'\"")
+                .description("\"Tesing challenge Meli bootcamp - 'Sua avaliação de casas'. Avaliable in the following districts: Promorar, Vila Peri, Castelo Branco, Bairro Alto and Vila Izabel.\"")
                 .version("1.0.0")
                 .license("Apache License Version 2.0")
                 .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0\"")

@@ -3,9 +3,7 @@ package com.bootcamp.Desafio.quality.service.calculation;
 import com.bootcamp.Desafio.quality.exception.DistrictNotFound;
 import com.bootcamp.Desafio.quality.repository.impl.DistrictRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Import;
 
-@Import(DistrictRepositoryImpl.class)
 public class GetDistrictValue {
 
     @Autowired
